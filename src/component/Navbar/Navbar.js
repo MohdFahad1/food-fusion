@@ -13,7 +13,6 @@ const Navbar = () => {
         <Link to="/"><img src={logo} alt="logo" /></Link>
         <h1>Taste</h1>
       </div>
-      <p>Restaurant & BBQ</p>
       </div>
       <ul>
         <li>

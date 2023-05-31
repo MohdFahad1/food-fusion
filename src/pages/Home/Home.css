@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Roboto&display=swap');
+
+header {
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.center {
+  text-align: center;
+  width: 800px;
+  position: absolute;
+  top: 45%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.center h1{
+  font-size: 75px;
+}
+
+.center p{
+  font-size: 30px;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+}
+
+button.view-menu {
+  width: 12rem;
+  height: auto;
+}
+
+button.view-menu .circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #000;
+  border-radius: 1.625rem;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button.view-menu .circle .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button.view-menu .circle .icon.arrow {
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.view-menu .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.view-menu .button-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+button.view-menu:hover .circle {
+  width: 100%;
+}
+
+button.view-menu:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button.view-menu:hover .button-text {
+  color: #fff;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+
+
+.about{
+  padding: 20px 80px;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 100px;
+  width: 100%;
+  padding-bottom: 38px;
+  border: 5px solid #FD7D9B;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #e7b1be, #f2073e);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+
+.first-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:6rem;
+  width: 100%;
+}
+
+.first-container h1{
+  font-size: 45px;
+  color: #f2073e;
+}
+
+.first-container p{
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+}
+
+.second-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:4rem;
+  width: 100%;
+}
+
+.second-container h1{
+  font-size: 45px;
+  color: #f2073e;
+}
+
+.second-container p{
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 35px;
+}
+
+.third-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.third-container h1{
+  font-size: 45px;
+  color: #f2073e;
+}
+
+.third-container p{
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 35px;
+}
+
+.first-line{
+  height: 5px;
+  width: 1000px;
+  margin: 50px 0;
+  background: #a1a1a1;
+}
+
+.second-line{
+  float: right;
+  height: 5px;
+  margin: 50px 0;
+  width: 1000px;
+  /* background: #FD7D9B; */
+  background: #a1a1a1;
+}
