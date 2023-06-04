@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '../../Assets/logo.png';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart } from "react-icons/fa";
 import './Navbar.css';
 
 

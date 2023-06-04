@@ -30,7 +30,10 @@ const Home = () => {
       <MultipleItems />
 
       <div className='about'>
-      <h1 className='about-heading'>Explore</h1>
+      <div className='about-heading'>
+        <h1>Explore</h1>
+        <p>explore our dishes</p>
+      </div>
       <div className='first-container'>
         <Food className="animation"/>
         <div>
