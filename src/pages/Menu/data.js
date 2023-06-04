@@ -18,7 +18,7 @@ import img17 from '../../Assets/kisspng-aa-na-tigela-smoothie-breakfast-juice-he
 
 
 
-export const menuItemsData = [
+const menuItemsData = [
     {
       id: 1,
       name: 'Mediterranean  Salad',
@@ -119,7 +119,7 @@ export const menuItemsData = [
     },
     {
       id: 15,
-      name: 'israeli salad',
+      name: 'turkish salad',
       info: 'spicey with garlic and then deep fried to crispy perfection',
       price: 24,
       img: img15,
@@ -139,3 +139,5 @@ export const menuItemsData = [
       img: img17,
     },
   ];
+
+  export default menuItemsData;

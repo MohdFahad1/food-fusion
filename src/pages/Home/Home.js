@@ -5,6 +5,7 @@ import banner from '../../Assets/jakub-kapusnak-sDbj1dFlFPU-unsplash.jpg';
 import Food2 from '../../Animations/ThirdAnimation'
 import Food1 from '../../Animations/SecondAnimation'
 import Food from '../../Animations/FirstAnimation/FirstAnimation';
+import MultipleItems from './Carousel/Carousel';
 
 const Home = () => {
   return (
@@ -26,6 +27,8 @@ const Home = () => {
         </div>
       </div>
       
+      <MultipleItems />
+
       <div className='about'>
       <h1 className='about-heading'>Explore</h1>
       <div className='first-container'>
