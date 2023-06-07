@@ -1,15 +1,14 @@
 import React from 'react'
 import './Menu.css';
-import menuItemsData from './data';
-import { FaMinus, FaPlaneSlash, FaPlus } from "react-icons/fa";
+import ButtonAddRemoveItem from './ButtonAddRemoveItem';
 
-const Menu = () => {
+const Menu = ({ list }) => {
   return (
     <div id="menu">
       <h1 className='menu-heading'>
-        "Savor a Culinary Journey: Indulge in Our Irresistible Menu Selections!"
+      "Savor a Culinary Journey: Indulge in Our Irresistible Menu Selections!"
       </h1>
-      {menuItemsData.map(({ id, name, info, price, img }) => {
+      {list.map(({ id, name, info, price, img }) => {
         return (
           <div key={id} className='menu-card'>
             <div className='menu-img'>
@@ -20,7 +19,7 @@ const Menu = () => {
               <p>{info}</p>
               <div className='order-btn'>
                 <p>$ {price}</p>
-                <button><FaMinus /> Add <FaPlus /></button>
+                <ButtonAddRemoveItem quantity={10}/>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../Assets/logo.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import CartCountButton from '../CartCountButton';
 
 
 const Navbar = () => {
@@ -25,16 +26,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/contact">
-            Contact
-          </Link>
-        </li>
-        <li>
           <Link to="/menu">
             Menu
           </Link>
         </li>
       </ul>
+      
+      <Link to="/cart">
+            <CartCountButton />
+          </Link>
     </nav>
   )
 }
